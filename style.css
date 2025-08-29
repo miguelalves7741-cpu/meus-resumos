@@ -6,7 +6,7 @@ body {
 }
 
 .sidebar {
-    background-color: rgba(17, 24, 39, 0.8); /* Dark Blue/Slate with transparency */
+    background-color: rgba(17, 24, 39, 0.9); /* Dark Blue/Slate with transparency */
     backdrop-filter: blur(10px);
     border-right: 1px solid #374151;
 }
