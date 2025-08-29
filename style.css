@@ -1,0 +1,72 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #111827; /* Dark background */
+    color: #d1d5db; /* Light grey text */
+    background-image: url('https://www.transparenttextures.com/patterns/carbon-fibre.png');
+}
+
+.sidebar {
+    background-color: rgba(17, 24, 39, 0.8); /* Dark Blue/Slate with transparency */
+    backdrop-filter: blur(10px);
+    border-right: 1px solid #374151;
+}
+
+.sidebar-link {
+    transition: all 0.2s ease-in-out;
+    color: #9ca3af;
+}
+
+.sidebar-link:hover {
+    background-color: #374151;
+    color: white;
+    transform: translateX(4px);
+}
+
+.sidebar-link-active {
+    background-color: #ca8a04; /* Gold */
+    color: #111827;
+    font-weight: 700;
+}
+
+.content-card {
+    background-color: #1f2937; /* Darker card background */
+    border-radius: 0.5rem;
+    border: 1px solid #374151;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.details {
+    display: none;
+    border-left: 3px solid #ca8a04; /* Gold */
+    background-color: #374151; /* Darker details background */
+}
+
+.interactive-card {
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.interactive-card:hover {
+    transform: translateY(-4px);
+    border-color: #ca8a04;
+}
+
+.review-btn {
+    background-color: #ca8a04;
+    color: #111827;
+    font-weight: 700;
+    transition: background-color 0.2s;
+}
+
+.review-btn:hover {
+    background-color: #eab308;
+}
+
+.subject-header {
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.subject-header:hover {
+    background-color: #374151;
+}
