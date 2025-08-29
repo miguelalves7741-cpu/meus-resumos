@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portal de Estudos para Concursos</title>
+    <title>RESUMOS</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -48,8 +48,7 @@
 
     <script>
         // --- BANCO DE DADOS DOS RESUMOS ---
-                // --- BANCO DE DADOS DOS RESUMOS ---
-                // --- BANCO DE DADOS DOS RESUMOS ---
+                       // --- BANCO DE DADOS DOS RESUMOS ---
         const studyData = {
             subjects: [
                 { 
@@ -220,6 +219,61 @@
                                         <ul class="list-disc list-inside space-y-2 text-slate-300">
                                             <li>Na frase "Cabia tudo em uma mala só", o sujeito é <strong class="text-white">"tudo"</strong> (O que cabia?).</li>
                                             <li>Em uma frase como "Tia Tula, o menino está aqui", <strong class="text-white">"Tia Tula"</strong> é o sujeito, enquanto <strong class="text-white">"menino"</strong> seria um vocativo se estivesse sendo chamado. As funções são diferentes.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            `
+                        },
+                        {
+                            id: 'concordancia-verbal-nominal',
+                            title: 'Concordância',
+                            content: `
+                                <div class="space-y-8">
+                                    <!-- Concordância Verbal -->
+                                    <div class="content-card p-6 sm:p-8">
+                                        <h2 class="text-2xl font-bold text-white mb-4 border-b border-slate-600 pb-2">Parte 1: Concordância Verbal</h2>
+                                        <p class="text-slate-300 mb-4">A regra geral é que o verbo concorda em número e pessoa com o núcleo do sujeito. Ex: "<strong>Existem</strong> <strong class="text-amber-400">momentos</strong> na vida...".</p>
+                                        
+                                        <div class="bg-red-900/50 border border-red-700 text-red-200 p-4 rounded-md mb-6">
+                                            <h4 class="font-semibold mb-2">💡 Caso Especial: Verbo HAVER</h4>
+                                            <p>No sentido de <strong>existir, ocorrer ou acontecer</strong>, o verbo HAVER é impessoal, ficando sempre no singular. Ex: "<strong>Houve</strong> um assalto" / "<strong>Deve haver</strong> muitas vagas."</p>
+                                        </div>
+
+                                        <h4 class="font-semibold text-lg text-white mb-3">A Partícula "SE"</h4>
+                                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                            <div class="bg-slate-800 p-4 rounded-md border border-slate-700">
+                                                <h5 class="font-bold text-amber-400">Partícula Apassivadora (PA)</h5>
+                                                <p class="text-sm mt-1">Ocorre com VTD ou VTDI. O verbo concorda com o sujeito paciente. Ex: "Alugam-<strong>se</strong> <strong class="text-white">quartos</strong>" (Quartos são alugados).</p>
+                                            </div>
+                                            <div class="bg-slate-800 p-4 rounded-md border border-slate-700">
+                                                <h5 class="font-bold text-amber-400">Índice de Indeterminação do Sujeito (IIS)</h5>
+                                                <p class="text-sm mt-1">Ocorre com VTI, VI ou VL. O verbo fica sempre no singular. Ex: "Precisa-<strong>se</strong> de ajuda."</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Concordância Nominal -->
+                                    <div class="content-card p-6 sm:p-8">
+                                        <h2 class="text-2xl font-bold text-white mb-4 border-b border-slate-600 pb-2">Parte 2: Concordância Nominal</h2>
+                                        <p class="text-slate-300 mb-4">É a harmonia entre o substantivo e as palavras que a ele se referem (artigos, adjetivos, etc.).</p>
+                                        
+                                        <div class="bg-red-900/50 border border-red-700 text-red-200 p-4 rounded-md">
+                                            <h4 class="font-semibold mb-2">💡 Casos Específicos Cobrados em Prova</h4>
+                                            <ul class="list-disc list-inside text-sm space-y-1">
+                                                <li><strong>Anexo, Obrigado:</strong> Concordam com o substantivo/pessoa. "Cartas anexas", "Muito obrigada", disse ela.</li>
+                                                <li><strong>Bastante, Meio:</strong> Como adjetivos, variam ("bastantes flores", "meia colher"). Como advérbios, são invariáveis ("estudei bastante", "meio aberta").</li>
+                                                <li><strong>É bom, É proibido:</strong> Ficam invariáveis se o sujeito não tiver determinante. Variam se tiver. Ex: "Entrada é proibido" vs. "<strong class="text-white">A</strong> entrada é proibida".</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Análise Crítica -->
+                                    <div class="content-card p-6 sm:p-8 border-yellow-500">
+                                        <h3 class="text-xl font-bold text-yellow-400 mb-3">⚠️ Análise Crítica do Material de Apoio</h3>
+                                        <p class="text-slate-400 mb-4">Atenção aos gabaritos do material de origem, que podem conter equívocos. A análise correta das regras gramaticais é fundamental:</p>
+                                        <ul class="list-disc list-inside space-y-2 text-slate-300">
+                                            <li>Em "classificou-se as 50 maiores cidades", o correto seria <strong class="text-white">"classificaram-se"</strong>, pois o verbo concorda com o sujeito paciente "as 50 maiores cidades".</li>
+                                            <li>Em "...que se promova novos estudos", o correto seria <strong class="text-white">"promovam-se"</strong>, concordando com "novos estudos".</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -591,5 +645,6 @@
     </script>
 </body>
 </html>
+
 
 
