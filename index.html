@@ -49,6 +49,7 @@
     <script>
         // --- BANCO DE DADOS DOS RESUMOS ---
                 // --- BANCO DE DADOS DOS RESUMOS ---
+                // --- BANCO DE DADOS DOS RESUMOS ---
         const studyData = {
             subjects: [
                 { 
@@ -150,6 +151,76 @@
                                                 <p class="text-sm">Expressa emoções súbitas. Ex: Ai!, Socorro!, Cuidado!.</p>
                                             </div>
                                         </div>
+                                    </div>
+                                </div>
+                            `
+                        },
+                        {
+                            id: 'sintaxe-estrutura-periodo',
+                            title: 'Sintaxe',
+                            content: `
+                                <div class="space-y-8">
+                                    <!-- Introdução -->
+                                    <div class="content-card p-6 sm:p-8">
+                                        <h2 class="text-2xl font-bold text-white mb-4 border-b border-slate-600 pb-2">Estrutura Morfossintática do Período</h2>
+                                        <p class="text-slate-300 mb-4">A Sintaxe estuda a função e a relação das palavras para formar sentidos. Vamos ver os conceitos fundamentais.</p>
+                                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
+                                            <div class="bg-slate-800 p-3 rounded-md border border-slate-700">
+                                                <h4 class="font-semibold text-amber-400">Frase</h4>
+                                                <p class="text-sm text-slate-400">Enunciado com sentido completo. Pode ou não ter verbo. Ex: "Socorro!".</p>
+                                            </div>
+                                            <div class="bg-slate-800 p-3 rounded-md border border-slate-700">
+                                                <h4 class="font-semibold text-amber-400">Oração</h4>
+                                                <p class="text-sm text-slate-400">Enunciado com verbo ou locução verbal. Ex: "O candidato estudou."</p>
+                                            </div>
+                                            <div class="bg-slate-800 p-3 rounded-md border border-slate-700">
+                                                <h4 class="font-semibold text-amber-400">Período</h4>
+                                                <p class="text-sm text-slate-400">Frase com uma ou mais orações. Ex: "Ele estudou e passou."</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Sujeito -->
+                                    <div class="content-card p-6 sm:p-8">
+                                        <h3 class="text-xl font-bold text-white mb-3">1. Termos Essenciais: O Sujeito</h3>
+                                        <p class="text-slate-400 mb-4">É o termo sobre o qual o verbo faz uma declaração. Para achá-lo, pergunte ao verbo: "Quem é que...?" ou "O que é que...?".</p>
+                                        <div class="bg-red-900/50 border border-red-700 text-red-200 p-4 rounded-md">
+                                            <h4 class="font-semibold mb-2">💡 Atenção para Concursos: Verbos Impessoais (Oração Sem Sujeito)!</h4>
+                                            <p>Verbos que indicam fenômenos da natureza (<strong class="text-white">choveu</strong>), tempo decorrido (<strong class="text-white">faz</strong> duas semanas, <strong class="text-white">há</strong> meses) ou existência (<strong class="text-white">haver</strong>) não têm sujeito e ficam sempre na 3ª pessoa do singular. O verbo <strong class="text-white">existir</strong>, ao contrário de <strong class="text-white">haver</strong>, tem sujeito e concorda com ele: "Devem <strong class="text-white">existir</strong> mais interessados."</p>
+                                        </div>
+                                    </div>
+
+                                    <!-- Transitividade Verbal -->
+                                    <div class="content-card p-6 sm:p-8">
+                                        <h3 class="text-xl font-bold text-white mb-3">2. Transitividade Verbal e Complementos</h3>
+                                        <p class="text-slate-400 mb-4">Analisa se o verbo precisa de um complemento para ter sentido completo.</p>
+                                        <ul class="list-disc list-inside space-y-2 text-slate-300">
+                                            <li><strong class="text-amber-400">Verbo Intransitivo (VI):</strong> Não precisa de complemento. Ex: "O coração <strong class="text-white">dispara</strong>."</li>
+                                            <li><strong class="text-amber-400">Verbo Transitivo Direto (VTD):</strong> Pede complemento sem preposição (Objeto Direto). Ex: "Vou roubando <strong class="text-white">as horas</strong>."</li>
+                                            <li><strong class="text-amber-400">Verbo Transitivo Indireto (VTI):</strong> Pede complemento com preposição (Objeto Indireto). Ex: "Lembrei-me <strong class="text-white">do teu sabor</strong>."</li>
+                                            <li><strong class="text-amber-400">Verbo de Ligação (VL):</strong> Liga o sujeito a uma característica (Predicativo do Sujeito). Ex: "Tu <strong class="text-white">és</strong> trevo."</li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <!-- Outros Termos -->
+                                    <div class="content-card p-6 sm:p-8">
+                                        <h3 class="text-xl font-bold text-white mb-3">3. Outros Termos da Oração</h3>
+                                        <div class="space-y-3">
+                                            <p><strong class="text-amber-400">Adjunto Adnominal:</strong> Termo que acompanha um substantivo para caracterizá-lo. Ex: "<strong class="text-white">A melhor aula</strong> de português..."</p>
+                                            <p><strong class="text-amber-400">Adjunto Adverbial:</strong> Indica uma circunstância (tempo, lugar, modo). Ex: "Entrei na rua dela <strong class="text-white">com meu carro</strong>."</p>
+                                            <p><strong class="text-amber-400">Aposto:</strong> Explica, resume ou desenvolve outro termo. Ex: "Porto Alegre, <strong class="text-white">a cidade sorriso</strong>, aguarda você."</p>
+                                            <p><strong class="text-amber-400">Vocativo:</strong> Termo para chamar ou interpelar. Sempre separado por vírgula. Ex: "Oh <strong class="text-white">Rita</strong>, volta..."</p>
+                                        </div>
+                                    </div>
+
+                                    <!-- Análise Crítica -->
+                                    <div class="content-card p-6 sm:p-8 border-yellow-500">
+                                        <h3 class="text-xl font-bold text-yellow-400 mb-3">⚠️ Análise Crítica do Material de Apoio</h3>
+                                        <p class="text-slate-400 mb-4">Notei possíveis equívocos nos gabaritos de algumas questões do material. É crucial focar na regra gramatical correta. Por exemplo:</p>
+                                        <ul class="list-disc list-inside space-y-2 text-slate-300">
+                                            <li>Na frase "Cabia tudo em uma mala só", o sujeito é <strong class="text-white">"tudo"</strong> (O que cabia?).</li>
+                                            <li>Em uma frase como "Tia Tula, o menino está aqui", <strong class="text-white">"Tia Tula"</strong> é o sujeito, enquanto <strong class="text-white">"menino"</strong> seria um vocativo se estivesse sendo chamado. As funções são diferentes.</li>
+                                        </ul>
                                     </div>
                                 </div>
                             `
@@ -520,4 +591,5 @@
     </script>
 </body>
 </html>
+
 
