@@ -48,9 +48,114 @@
 
     <script>
         // --- BANCO DE DADOS DOS RESUMOS ---
+                // --- BANCO DE DADOS DOS RESUMOS ---
         const studyData = {
             subjects: [
-                { id: 'portugues', name: 'Português', summaries: [] },
+                { 
+                    id: 'portugues', 
+                    name: 'Português', 
+                    summaries: [
+                        {
+                            id: 'morfologia-classes-de-palavras',
+                            title: 'Morfologia',
+                            content: `
+                                <div class="space-y-8">
+                                    <!-- Introdução -->
+                                    <div class="content-card p-6 sm:p-8">
+                                        <h2 class="text-2xl font-bold text-white mb-4 border-b border-slate-600 pb-2">Introdução à Morfologia</h2>
+                                        <p class="text-slate-300 mb-4">A Morfologia é o campo da gramática que estuda as palavras de forma isolada, analisando sua estrutura, formação e, principalmente, sua classificação. Enquanto a Sintaxe se preocupa com a função das palavras dentro de uma frase, a Morfologia foca em "quem" cada palavra é.</p>
+                                        <div class="bg-slate-800 border border-slate-700 text-slate-200 p-4 rounded-md">
+                                            <h4 class="font-semibold text-amber-400 mb-2">As 10 Classes Gramaticais:</h4>
+                                            <ol class="grid grid-cols-2 sm:grid-cols-3 gap-2 list-inside list-decimal">
+                                                <li>Substantivo</li>
+                                                <li>Artigo</li>
+                                                <li>Adjetivo</li>
+                                                <li>Numeral</li>
+                                                <li>Pronome</li>
+                                                <li>Verbo</li>
+                                                <li>Advérbio</li>
+                                                <li>Preposição</li>
+                                                <li>Conjunção</li>
+                                                <li>Interjeição</li>
+                                            </ol>
+                                        </div>
+                                    </div>
+
+                                    <!-- Substantivo -->
+                                    <div class="content-card p-6 sm:p-8">
+                                        <h3 class="text-xl font-bold text-white mb-3">1. Substantivo</h3>
+                                        <p class="text-slate-400 mb-4">É a palavra que dá nome aos seres, coisas, lugares, ideias e sentimentos. É uma classe variável (gênero, número, grau).</p>
+                                        <div class="bg-red-900/50 border border-red-700 text-red-200 p-4 rounded-md">
+                                            <h4 class="font-semibold mb-2">💡 Atenção para Concursos: Substantivação!</h4>
+                                            <p>É o processo em que uma palavra de outra classe é usada como substantivo, geralmente precedida por um artigo. Ex: "Não aceito um <strong class="text-white">não</strong> de você." (advérbio vira substantivo).</p>
+                                        </div>
+                                    </div>
+
+                                    <!-- Artigo -->
+                                    <div class="content-card p-6 sm:p-8">
+                                        <h3 class="text-xl font-bold text-white mb-3">2. Artigo</h3>
+                                        <p class="text-slate-400 mb-4">Palavra que antecede o substantivo para defini-lo (o, a) ou indefini-lo (um, uma).</p>
+                                        <div class="bg-red-900/50 border border-red-700 text-red-200 p-4 rounded-md">
+                                            <h4 class="font-semibold mb-2">💡 Atenção para Concursos: Uso Facultativo!</h4>
+                                            <p>O uso do artigo é opcional antes de nomes próprios ("<strong class="text-white">A</strong> Bruna chegou") e pronomes possessivos ("<strong class="text-white">O</strong> seu concurso será...").</p>
+                                        </div>
+                                    </div>
+
+                                    <!-- Adjetivo -->
+                                    <div class="content-card p-6 sm:p-8">
+                                        <h3 class="text-xl font-bold text-white mb-3">3. Adjetivo</h3>
+                                        <p class="text-slate-400 mb-4">Palavra que expressa qualidade, característica ou estado do substantivo. <strong class="text-amber-400">Locução Adjetiva:</strong> preposição + substantivo (Ex: amor <strong class="text-white">de mãe</strong> = materno).</p>
+                                        <div class="bg-red-900/50 border border-red-700 text-red-200 p-4 rounded-md">
+                                            <h4 class="font-semibold mb-2">💡 Atenção para Concursos: Posição do Adjetivo!</h4>
+                                            <p>A posição pode mudar o sentido: "<strong class="text-white">velhas casas</strong>" (antigas) vs. "<strong class="text-white">casas velhas</strong>" (em mau estado). E também a classe: "<strong class="text-white">certos lugares</strong>" (pronome) vs. "<strong class="text-white">lugares certos</strong>" (adjetivo).</p>
+                                        </div>
+                                    </div>
+
+                                    <!-- Advérbio -->
+                                    <div class="content-card p-6 sm:p-8">
+                                        <h3 class="text-xl font-bold text-white mb-3">4. Advérbio</h3>
+                                        <p class="text-slate-400 mb-4">Palavra invariável que modifica um verbo, adjetivo ou outro advérbio, indicando uma circunstância (lugar, tempo, modo, etc.).</p>
+                                        <div class="bg-red-900/50 border border-red-700 text-red-200 p-4 rounded-md">
+                                            <h4 class="font-semibold mb-2">💡 Atenção para Concursos: Valor Semântico!</h4>
+                                            <p>As bancas exploram o sentido. Ex: "<strong class="text-white">Já</strong> um celular..." pode indicar oposição, não tempo. O contexto é crucial!</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Demais Classes -->
+                                    <div class="content-card p-6 sm:p-8">
+                                        <h3 class="text-xl font-bold text-white mb-4 text-center">Outras Classes Gramaticais</h3>
+                                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                            <div class="bg-slate-800 p-4 rounded-lg border border-slate-700">
+                                                <h4 class="font-semibold text-amber-400">5. Numeral</h4>
+                                                <p class="text-sm">Indica quantidade (cardinal: um, dois) ou ordem (ordinal: primeiro, segundo). <strong class="text-red-400">Cuidado:</strong> "num" é "em + um (artigo)", não "em + um (numeral)".</p>
+                                            </div>
+                                            <div class="bg-slate-800 p-4 rounded-lg border border-slate-700">
+                                                <h4 class="font-semibold text-amber-400">6. Pronome</h4>
+                                                <p class="text-sm">Substitui ou acompanha o substantivo. <strong class="text-red-400">Dica:</strong> O "que" é pronome relativo se puder ser trocado por "o qual" e suas variações.</p>
+                                            </div>
+                                            <div class="bg-slate-800 p-4 rounded-lg border border-slate-700">
+                                                <h4 class="font-semibold text-amber-400">7. Verbo</h4>
+                                                <p class="text-sm">Indica ação, estado ou fenômeno. Modos: Indicativo (certeza), Subjuntivo (dúvida/desejo), Imperativo (ordem).</p>
+                                            </div>
+                                            <div class="bg-slate-800 p-4 rounded-lg border border-slate-700">
+                                                <h4 class="font-semibold text-amber-400">8. Preposição</h4>
+                                                <p class="text-sm">Palavra invariável que liga dois termos, subordinando o segundo ao primeiro. Ex: a, com, de, em, para.</p>
+                                            </div>
+                                            <div class="bg-slate-800 p-4 rounded-lg border border-slate-700">
+                                                <h4 class="font-semibold text-amber-400">9. Conjunção</h4>
+                                                <p class="text-sm">Liga orações ou termos de mesma função. <strong class="text-red-400">Dica:</strong> O "que" é conjunção integrante se a oração iniciada por ele puder ser trocada por "ISSO".</p>
+                                            </div>
+                                            <div class="bg-slate-800 p-4 rounded-lg border border-slate-700">
+                                                <h4 class="font-semibold text-amber-400">10. Interjeição</h4>
+                                                <p class="text-sm">Expressa emoções súbitas. Ex: Ai!, Socorro!, Cuidado!.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            `
+                        }
+                    ] 
+                },
                 { id: 'rlm', name: 'RLM', summaries: [] },
                 { id: 'informatica', name: 'Informática', summaries: [] },
                 { id: 'fisica', name: 'Física', summaries: [] },
@@ -170,6 +275,7 @@
                 { id: 'redacao', name: 'Redação', summaries: [] }
             ]
         };
+
 
         // --- LÓGICA DA APLICAÇÃO ---
         const subjectNav = document.getElementById('subject-nav');
@@ -414,3 +520,4 @@
     </script>
 </body>
 </html>
+
